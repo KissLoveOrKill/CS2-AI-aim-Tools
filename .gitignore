@@ -14,12 +14,15 @@ dist/
 
 # Project Data
 数据集/
-训练结果/
-!训练结果/results.csv
+# 训练结果/
+# !训练结果/results.csv
 
 # Large files but keep if small enough (Github limit is 100MB)
 *.tfevents*
+!训练结果/**/*.tfevents*
 *.pt
+!训练结果/**/*.pt
+# except the specific weights we need to run
 # except the specific weights we need to run
 !aimbot_version2/yolov5-7.0/aimtools/weights/headonly.pt
 
